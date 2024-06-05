@@ -1,6 +1,14 @@
 Ci sono 2 tipi di iterazioni:
     for (ciclo definito)
     while (ciclo indefinito)
+    do while
+
+Definizione:
+    E' una struttura di controllo in un algoritmo che permette di ripetere un blocco di codice.
+    A seconda dei casi si possono utilizzare:
+        for: quando si sa il numero di iterazioni che devono essere eseguite (ciclo definito)
+        while: quando non si sa il numero di iterazioni da eseguire (ciclo indefinito)
+        do while: ha la stessa funzione di while ma la differenza é che il controllo della condizione viene dopo l'esecuzione del codice contenuto, quindi eseguirá sempre almeno una volta il codice contenuto
 
 Sintassi:
     for:
@@ -23,3 +31,10 @@ Sintassi:
                 /*Istruzioni da eseguire*/
                 i++;
             }
+    do while:
+        do {
+            /*Istruzioni da eseguire*/
+            /*Passo (necessario per evitare un ciclo infinito)*/
+        } while(condizione);
+
+        /*Da notare che la condizione viene dopo il codice contenuto*/
