@@ -1,0 +1,25 @@
+Ci sono 2 tipi di iterazioni:
+    for (ciclo definito)
+    while (ciclo indefinito)
+
+Sintassi:
+    for:
+        for (valore di inizio ; condizione ; passo) {
+            /*Istruzioni da eseguire*/
+        }
+
+        esempio:
+            for (int i = 0;i < var;i++) {
+                /*Istruzioni da eseguire*/
+            }
+    while:
+        while (condizione) {
+            /*Istruzioni da eseguire*/
+            /*Passo (necessario per evitare un ciclo infinito)*/
+        }
+
+        esempio:
+            while (i < var) {
+                /*Istruzioni da eseguire*/
+                i++;
+            }
