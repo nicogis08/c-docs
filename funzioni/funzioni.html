@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C Docs</title>
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="funzioni.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>C Docs</h1>
+
+    <main>
+        <section class="argomento-1">
+            <div class="testo">
+                <div class="superiore">
+                    <h2>Funzioni</h2>
+                <p>Definizione:</p>
+                <ul>
+                    <li>E' un blocco di codice che può essere riutilizzato.</li>
+                </ul>
+                <p>Utilizzo:</p>
+                <ul>
+                    <li>Le funzioni permettono di riutilizzare parti di codice e quindi vengono utilizzare per risolvere più problemi di uno stesso tipo.</li>
+                    <li>Le funzioni devono avere dei dati di input e dei dati di output.</li>
+                    <li>Le funzioni possono essere di vari tipi come le variabili, per esempio: int, float e char, però c'è anche un altro tipo chiamato void.</li>
+                    <li>La funzione void ha la particolarità di non restituire alcun valore e quindi non contiene l'istruzione return.</li>
+                </ul>
+                <p>Sintassi:</p>
+                <ul>
+                    <li><code>Dichiarazione</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (valore di inizio ; condizione ; passo) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (int i = 0;i < var;i++) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li><code>while</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">while (condizione) {
+    /*Istruzioni da eseguire*/
+    /*Passo (necessario per evitare un ciclo infinito)*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">while (i < var) {
+    /*Istruzioni da eseguire*/
+    i++;
+}</code>
+                    </pre>
+                    <li><code>do while</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (valore di inizio ; condizione ; passo) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">do {
+    /*Istruzioni da eseguire*/
+    /*Passo (necessario per evitare un ciclo infinito)*/
+} while (condizione);</code>
+                    </pre>
+            </div>
+        
+    </main>
+
+    <script src="../prism.js"></script>
 </body>
 </html>
