@@ -1,6 +1,7 @@
 h1,
 h2,
 li,
+p,
 button {
   font-family: "Inter", sans-serif;
 }
@@ -26,9 +27,8 @@ h2 {
     font-size: 2.6rem;
     font-weight: 600;
     text-decoration-line: underline;
-    display: inline-block;
     margin: 0 auto;
-    text-align: end;
+    text-align: center;
 }
 
 button {
@@ -56,8 +56,27 @@ code {
     text-decoration-line: underline;
 }
 
+code.language-c {
+    text-decoration-line: none;
+    display: inline-block !important;
+    width: 50% !important;
+    align-self: center;
+    
+}
+pre {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 !important;
+    align-self: left;
+}
 
-li {
+.code-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li, p {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
@@ -78,7 +97,6 @@ main {
 
 section {
     display: flex;
-    height: 21.5rem;
     align-items: center;
 }
 
@@ -133,4 +151,3 @@ section {
         flex-direction: row;
     }
 }
-

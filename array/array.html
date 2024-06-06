@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C Docs</title>
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="array.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <h1>C Docs</h1>
+
+    <main>
+        <section class="argomento-1">
+            <div class="testo">
+                <div class="superiore">
+                    <h2>Array</h2>
+                </div>
+                <p><strong>Definizione:</strong></p>
+                <ul>
+                    <li>È un dato strutturato formato da celle omogenee e contigue di memoria.</li>
+                </ul>
+                <p><strong>Utilizzo:</strong></p>
+                <ul>
+                    <li>Organizzazione dei dati per renderli di facile accesso in modo da evitare la creazione di molte variabili che diventrebbero difficili da gestire.</li>
+                </ul>
+                <p><strong>Sintassi:</strong></p>
+                <ul>
+                    <li>Dichiarazione:</li>
+                    <pre>
+                        <code class="language-c line-numbers">int myArray[5];
+/*tipo di array, nome array[grandezza array];*/
+/*Da notare che un array di 5 elementi va da 0 a 4*/
+                    
+/*Altro modo per dichiarare gli array*/
+                    
+int myArray[] = {1, 2, 3, 4, 5};
+                    
+/*All'interno delle parentesi si possono direttamente 
+inserire i dati contenuti nell'array e non è necessario inserire 
+la lunghezza dell'array nelle parentesi []*/ 
+</code>
+                    </pre>
+                    <li>Accesso al valore di un array:</li>
+                    <pre>
+                        <code class="language-c line-numbers">printf("%d", myArray[0]);</code>
+                    </pre>
+                    <li>Modifica del valore di un array:</li>
+                    <pre>
+                        <code class="language-c line-numbers">myArray[0] = 10;
+/*Il valore presente nella cella 0 dell'array 
+viene sovrascritto con il numero 10*/</code>
+                    </pre>
+                </ul>
+            </div>
+    </main>
+
+    <script src="../prism.js"></script>
 </body>
 </html>
