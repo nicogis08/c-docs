@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C Docs</title>
-    <link rel="stylesheet" href="prism.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../prism.css">
+    <link rel="stylesheet" href="cicli.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,41 +23,61 @@
             <div class="testo">
                 <div class="superiore">
                     <h2>Iterazione</h2>
-                    <a href="cicli/cicli.html">Vai al corso</a>
                 </div>
+                <p>Ci sono due tipi di iterazione:</p>
                 <ul>
-                    <li>Impara la sintassi e la differenza tra l'iterazione definita e indefinita con i cicli <code>for</code> e <code>while</code>.</li>
-                    <li>Impara ad usare le istruzioni <code>break</code> e continue e i loro effetti all'interno di un ciclo.</li>
+                    <li><code>for</code> (ciclo definito).</li>
+                    <li><code>while</code> e <code>do while</code> (ciclo indefinito).</li>
                 </ul>
-            </div>
-            <img src="img/home-cicli.png" alt="cicli" class="img img-cicli">
-        </section>
-        <section class="argomento-2">
-            <div class="testo">
-                <div class="superiore">
-                    <h2>Array</h2>
-                    <a href="array/array.html">Vai al corso</a>
-                </div>
+                <p>Definizione:</p>
                 <ul>
-                    <li>Scopri la prima e più importante collezione di dati e i suoi usi.</li>
-                    <li>Impara la sintassi degli array e l'utilizzo dell'iterazione per operare su tutti i valori.</li>
+                    <li>È una struttura di controllo che permette di ripetere un blocco di codice.</li>
                 </ul>
-            </div>
-            <img src="img/home-array.png" alt="array" class="img img-array">
-        </section>
-        <section class="argomento-3">
-            <div class="testo">
-                <div class="superiore">
-                    <h2>Funzioni</h2>
-                    <a href="funzioni/funzioni.html">Vai al corso</a>
-                </div>
+                <p>Sintassi:</p>
                 <ul>
-                    <li>Studia come riutilizzare parti del tuo codice per renderlo più conciso</li>
-                    <li>Impara la sintassi e come passare diversi tipi di valori come gli array</li>
-                </ul>
+                    <li><code>for</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (valore di inizio ; condizione ; passo) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (int i = 0;i < var;i++) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li><code>while</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">while (condizione) {
+    /*Istruzioni da eseguire*/
+    /*Passo (necessario per evitare un ciclo infinito)*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">while (i < var) {
+    /*Istruzioni da eseguire*/
+    i++;
+}</code>
+                    </pre>
+                    <li><code>do while</code>:</li>
+                    <pre>
+                        <code class="language-c line-numbers">for (valore di inizio ; condizione ; passo) {
+    /*Istruzioni da eseguire*/
+}</code>
+                    </pre>
+                    <li>Esempio:</li>
+                    <pre>
+                        <code class="language-c line-numbers">do {
+    /*Istruzioni da eseguire*/
+    /*Passo (necessario per evitare un ciclo infinito)*/
+} while (condizione);</code>
+                    </pre>
             </div>
-            <img src="img/home-array.png" alt="array" class="img img-array">
-        </section>
+        
     </main>
+
+    <script src="../prism.js"></script>
 </body>
 </html>
