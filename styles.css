@@ -42,6 +42,7 @@ button {
     margin-left: 3rem;
     text-decoration: none;
     transition: transform linear 100ms;
+    border: 2px solid black;
 }
 
 button:active {
@@ -66,6 +67,10 @@ code {
 
 .argomento-3 button {
     background: #EDE878;
+}
+
+.argomento-4 button {
+    background: #F36359;
 }
 
 li {
@@ -97,6 +102,10 @@ main {
 
 .argomento-3 {
     border: 6px solid #EDE878;
+}
+
+.argomento-4 {
+    border: 6px solid #F36359;
 }
 
 
