@@ -88,7 +88,7 @@ ul {
 }
 
 main {
-    border: 1px solid red;
+    border: 6px solid #72BEF6;
     width: 70rem;
     display: flex;
     flex-direction: column;
@@ -114,10 +114,26 @@ section {
     gap: 1.5rem;
 }
 
+body {
+    margin-bottom: 0;
+}
+
 .img {
     flex: 2;
     max-width: 30rem;
     object-fit: contain;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background: #e2e2e2;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+p {
+    font-size: 1.5rem;
+    margin: 1rem auto !important;
 }
 
 @media screen and (max-width: 1050px) {
