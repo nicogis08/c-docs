@@ -33,37 +33,26 @@
                     <li>Permettono di riutilizzare parti di codice e quindi vengono utilizzare per risolvere più problemi di uno stesso tipo.</li>
                     <li>Devono avere dei dati di input e dei dati di output.</li>
                     <li>Possono essere di vari tipi come le variabili, per esempio: int, float e char, però c'è anche un altro tipo chiamato void.</li>
-                    <li>Void ha la particolarità di non restituire alcun valore e quindi non contiene l'istruzione return.</li>
+                    <li>Void ha la particolarità di non restituire alcun valore e quindi non contiene l'istruzione return</li>
                 </ul>
                 <p><strong>Sintassi:</strong></p>
                 <ul>
                     <li>Dichiarazione:</li>
                     <pre>
-                        <code class="language-c line-numbers">int func(/*Dati di input*/); /*Prototipo*/
+                        <code class="language-c line-numbers">iint func(/*Dati di input*/); /*Prototipo*/
 
 int main() {
     int a = func(/*Dati da passare alla funzione*/);
-        return 0;
-                            }
+    return 0;
+}
                     
-    int func(/*Dati di input*/) { /*Corpo*/
-        /*Codice da eseguire*/
-        return /*valore da restituire*/;
-    }
-                    
-/*N.B. La funzione è stata dichiarata prima del main 
-perchè quando il controllo parte dal main, la funzione 
-deve essere già stata dichiarata, altrimenti restituirebbe un errore.
-Il corpo della funzione può anche essere scritto direttamente 
-prima del main, dentro la dichiarazione ma per convenzione 
-si preferisce scrivere il corpo delle funzioni dopo il main 
-per evitare che in programmi con molte funzioni il main vada alla 
-fine del codice rendendolo meno leggibile.
-Le funzioni devono sempre avere l'istruzione return, ad eccezione del void.
-Le funzioni void vengono chiamate procedure.*/
+int func(/*Dati di input*/) { /*Corpo*/
+    /*Codice da eseguire*/
+    return /*valore da restituire*/;
+}
 </code>
                     </pre>
-                    <li>Le procedure:</li>
+                    <li>Procedure:</li>
                     <pre>
                         <code class="language-c line-numbers">void func(/*Dati di input*/); /*Prototipo*/
 
@@ -75,8 +64,8 @@ int main() {
 void func(/*Dati di input*/) { /*Corpo*/
     /*Codice da eseguire*/
 }</code>
-</pre>
-<p>LLe funzioni void possono anche essere utilizzate per restituire <br>più di un valore tramite puntatori o array passati per indirizzo, vedi <a href="../puntatori/puntatori.html">puntatori</a>.</p>
+                    </pre>
+                    <p>Le funzioni void possono anche essere utilizzare<br> per restituire più di un valore tramite puntatori o array passati per indirizzo, vedi <a href="../funzioni/funzioni.html">puntatori</a>.</p>
                 </ul>
             </div>
     </main>
