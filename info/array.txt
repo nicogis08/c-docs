@@ -1,0 +1,24 @@
+Definizione:
+    E' un dato strutturato formato da celle omogenee e contigue di memoria
+
+Utilizzo:
+    Gli array possono essere utili per organizzare degli insiemi di dati e renderli facili da accedere in modo da evitare la creazione di molte variabili che diventarebbero difficili da gestire
+
+Sintassi:
+    Dichiarazione:
+        int myArray[5];
+        tipo di array, nome array[grandezza array];
+        /*Da notare che un array di 5 elementi va da 0 a 4*/
+
+        /*Altro modo per dichiarare gli array*/
+
+        int myArray[] = {1, 2, 3, 4, 5};
+
+        /*All'interno delle parentesi si possono direttamente inserire i dati contenuti nell'array e non è necessario inserire la lunghezza dell'array nelle parentesi []*/ 
+
+    Come accedere al valore di un array:
+        printf("%d",myArray[0]);
+    
+    Come modificare il valore di un array:
+        myArray[0] = 10;
+        /*Il valore presente nella cella 0 dell'array viene sovrascritto con il numero 10*/
