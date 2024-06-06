@@ -135,7 +135,7 @@ section {
 }
 
 .img {
-    flex: 2;
+    flex: auto;
     max-width: 30rem;
     object-fit: contain;
 }
@@ -194,6 +194,10 @@ body {
         display: block;
         margin: 0 auto;
         margin-top: 1rem;
+    }
+
+    .img {
+        max-width: 25rem;
     }
 }
 
