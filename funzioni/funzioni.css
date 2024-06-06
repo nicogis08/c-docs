@@ -1,7 +1,6 @@
 h1,
 h2,
 li,
-p,
 button {
   font-family: "Inter", sans-serif;
 }
@@ -27,8 +26,9 @@ h2 {
     font-size: 2.6rem;
     font-weight: 600;
     text-decoration-line: underline;
+    display: inline-block;
     margin: 0 auto;
-    text-align: center;
+    text-align: end;
 }
 
 button {
@@ -56,27 +56,8 @@ code {
     text-decoration-line: underline;
 }
 
-code.language-c {
-    text-decoration-line: none;
-    display: inline-block !important;
-    width: 50% !important;
-    align-self: center;
-    
-}
-pre {
-    width: 100% !important;
-    margin: 0 auto;
-    padding: 0 !important;
-    align-self: left;
-}
 
-.code-toolbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-li, p {
+li {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
@@ -88,7 +69,7 @@ ul {
 }
 
 main {
-    border: 1px solid red;
+    border: 6px solid #EDE878;
     width: 70rem;
     display: flex;
     flex-direction: column;
@@ -97,6 +78,7 @@ main {
 
 section {
     display: flex;
+    height: 21.5rem;
     align-items: center;
 }
 
@@ -118,6 +100,23 @@ section {
     flex: 2;
     max-width: 30rem;
     object-fit: contain;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background: #e2e2e2;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+body {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 1rem auto !important;
 }
 
 @media screen and (max-width: 1050px) {
@@ -151,3 +150,4 @@ section {
         flex-direction: row;
     }
 }
+
