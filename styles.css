@@ -31,7 +31,7 @@ h2 {
     text-align: end;
 }
 
-a {
+button {
     margin-top: 0;
     font-size: 2rem;
     font-weight: 600;
@@ -41,11 +41,14 @@ a {
     box-shadow: 4px 4px black;
     margin-left: 3rem;
     text-decoration: none;
+    transition: transform linear 100ms;
 }
 
-a:active {
+button:active {
     box-shadow: none;
     transform: translate(4px, 4px);
+    -moz-transform: translate(4px, 4px);
+    -webkit-transform: translate(4px, 4px);
 }
 
 code {
@@ -53,15 +56,15 @@ code {
     text-decoration-line: underline;
 }
 
-.argomento-1 a {
+.argomento-1 button {
     background: #72BEF6;
 }
 
-.argomento-2 a {
+.argomento-2 button {
     background: #7EE575;
 }
 
-.argomento-3 a {
+.argomento-3 button {
     background: #EDE878;
 }
 
@@ -151,7 +154,19 @@ section {
 
 @media screen and (max-width: 450px) {
     .superiore {
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
     }
 }
 
