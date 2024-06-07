@@ -133,5 +133,9 @@ section {
     .superiore {
         flex-direction: row;
     }
+
+.img {
+    max-width: 25rem;
+}
 }
 
